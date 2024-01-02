@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/data">
+        <fieldset>
+            <legend>Personal Detail</legend>
+        <label for="name">Firstname:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="middelname">Middlename:</label>
+        <input type="text" id="middelname" required><br><br>
+
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" required><br><br>
+
+        <label for="course">Course:</label>
+        <select name="course" id="course">
+            <option value="none">Course</option>
+            <option value="">BCA</option>
+            <option value="">MCA</option>
+            <option value="">BBA</option>
+            <option value="">B.Tech</option>
+            <option value="">M.Tech</option>
+            <option value="">MBA</option>
+        </select><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="gender" value="male">
+        <label for="">Male</label><br>
+        <input type="radio" name="gender" id="gender" value="female">
+        <label for="">Female</label> <br>
+        <input type="radio" name="gender" id="gender" value="female">
+        <label for="">Other</label> <br><br>
+
+        <label for="dob">DOB</label>
+        <input type="datetime-local" id="dob" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea name="" id="" cols="80" rows="5"></textarea><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <label for="Re-password">Re-type password:</label>
+        <input type="password" id="Re-password" required><br><br>
+
+        <input type="checkbox" id="term" value="Applied" required>
+        <label for="term">Agree to terms and conditions</label><br><br>
+
+        <label for="">Choose File</label>
+        <input type="file"><br><br>
+        
+        <label for="color">Choose Color</label>
+        <input type="color" id="color" required>
+        
+        <br><br>
+    
+        <input type="reset">
+        <input type="submit" value="submit"><br>
+        </fieldset>
+    </form>
+</body>
+</html>
